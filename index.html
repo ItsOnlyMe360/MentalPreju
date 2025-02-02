@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mentalmente Prejudicados</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('background.png');
+            background-repeat: repeat;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        header {
+            background-color: #3b8526;
+            text-align: center;
+            color: #fff;
+            padding: 10px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #2a631c;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        button {
+            background-color: #3b8526;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background-color: #2a631c;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="header.png" alt="Header Image">
+    </header>
+    <nav>
+        <a href="https://itsonlyme360.github.io/MentalPreju/">Página Inicial</a>
+        <a href="https://itsonlyme360.github.io/">Sobre</a>
+    </nav>
+    <main>
+        <div class="button-container">
+            <button onclick="window.location.href='minecraft:?addExternalServer=MentalPreju|enx-cirion-17.enx.host:10010'">Bedrock Edition</button>
+            <button onclick="copyJavaEditionIP()">Java Edition</button>
+        </div>
+    </main>
+    <script>
+        function copyJavaEditionIP() {
+            const ip = 'mentalmenteprejudicados.jogar.io';
+            navigator.clipboard.writeText(ip).then(() => {
+                alert('IP copiado: ' + ip);
+            }).catch(err => {
+                alert('Falha ao copiar o IP');
+            });
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>
