@@ -86,6 +86,18 @@
             cursor: pointer;
         }
 
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: white
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #d4d4d4;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -97,11 +109,15 @@
         <a href="https://itsonlyme360.github.io/">Sobre Mim</a>
     </nav>
     <main>
+        <div class="title">IPs</div>
+        <div class="subtitle">Clique para copiar o ip do servidor (Bedrock adiciona automaticamente)</div>
         <div class="button-container">
             <button onclick="window.location.href='minecraft:?addExternalServer=MentalPreju|enx-cirion-17.enx.host:10010'">Bedrock Edition</button>
             <button onclick="copyJavaEditionIP()">Java Edition</button>
         </div>
         <div class="server-status">
+            <div class="title">Status</div>
+            <div class="subtitle">Clique na imagem para atualizar o status do servidor</div>
             <img src="https://api.mcstatus.io/v2/widget/java/mentalmenteprejudicados.jogar.io" alt="Server Status" onclick="reloadImage(this)">
         </div>
     </main>
