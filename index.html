@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Mentalmente Prejudicados</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
@@ -45,24 +46,29 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 80vh;
+            height: 70vh;
             text-align: center;
+            padding: 20px;
         }
 
         .button-container {
             display: flex;
-            gap: 20px;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 300px;
         }
 
         button {
             background-color: #3b8526;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 15px;
             font-size: 16px;
             cursor: pointer;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
         }
 
         button:hover {
@@ -73,7 +79,7 @@
 </head>
 <body>
     <header>
-        <img src="header.png" alt="Header Image">
+        <img src="header.png" alt="Header Image" style="max-width: 100%; height: auto;">
     </header>
     <nav>
         <a href="https://itsonlyme360.github.io/MentalPreju/">Página Inicial</a>
