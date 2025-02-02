@@ -44,6 +44,7 @@
 
         main {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 70vh;
@@ -75,6 +76,15 @@
             background-color: #2a631c;
         }
 
+        .server-status {
+            margin-top: 30px;
+        }
+
+        .server-status img {
+            max-width: 300px;
+            height: auto;
+        }
+
     </style>
 </head>
 <body>
@@ -89,6 +99,9 @@
         <div class="button-container">
             <button onclick="window.location.href='minecraft:?addExternalServer=MentalPreju|enx-cirion-17.enx.host:10010'">Bedrock Edition</button>
             <button onclick="copyJavaEditionIP()">Java Edition</button>
+        </div>
+        <div class="server-status">
+            <img src="https://api.mcstatus.io/v2/widget/java/mentalmenteprejudicados.jogar.io" alt="Server Status">
         </div>
     </main>
     <script>
