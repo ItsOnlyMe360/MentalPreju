@@ -83,6 +83,7 @@
         .server-status img {
             max-width: 300px;
             height: auto;
+            cursor: pointer;
         }
 
     </style>
@@ -101,7 +102,7 @@
             <button onclick="copyJavaEditionIP()">Java Edition</button>
         </div>
         <div class="server-status">
-            <img src="https://api.mcstatus.io/v2/widget/java/mentalmenteprejudicados.jogar.io" alt="Server Status">
+            <img src="https://api.mcstatus.io/v2/widget/java/mentalmenteprejudicados.jogar.io" alt="Server Status" onclick="reloadImage(this)">
         </div>
     </main>
     <script>
@@ -112,6 +113,10 @@
             }).catch(err => {
                 alert('Falha ao copiar o IP');
             });
+        }
+
+        function reloadImage(img) {
+            img.src = "https://api.mcstatus.io/v2/widget/java/mentalmenteprejudicados.jogar.io?" + new Date().getTime();
         }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
