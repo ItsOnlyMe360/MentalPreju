@@ -114,7 +114,6 @@
     </header>
     <nav>
         <a href="https://itsonlyme360.github.io/MentalPreju/">Página Inicial</a>
-        <a href="https://itsonlyme360.github.io/">Sobre Mim</a>
     </nav>
     <main>
         <div class="title">IPs</div>
@@ -126,17 +125,17 @@
         <div class="server-map">
             <div class="title">Mapa</div>
             <div class="subtitle">Veja o mapa ao vivo do servidor</div>
-            <button onclick="window.location.href='http://enx-soc-26.enx.host:10015'"><i class="fas fa-map"></i><span>Mapa do Server</span></button>
+            <button onclick="window.location.href='http://br-ded-1.enxadahost.com:10077'"><i class="fas fa-map"></i><span>Mapa do Server</span></button>
         </div>
         <div class="server-status">
             <div class="title">Status</div>
             <div class="subtitle">Clique na imagem para atualizar o status do servidor</div>
-            <img src="https://api.mcstatus.io/v2/widget/java/mentalmenteprejudicados.enxada.host" alt="Server Status" onclick="reloadImage(this)">
+            <img src="https://api.mcstatus.io/v2/widget/java/mentalpreju.enxada.host" alt="Server Status" onclick="reloadImage(this)">
         </div>
     </main>
     <script>
         function copyJavaEditionIP() {
-            const ip = 'mentalmenteprejudicados.enxada.host';
+            const ip = 'mentalpreju.enxada.host';
             navigator.clipboard.writeText(ip).then(() => {
                 alert('IP copiado: ' + ip);
             }).catch(err => {
@@ -145,7 +144,7 @@
         }
 
         function reloadImage(img) {
-            img.src = "https://api.mcstatus.io/v2/widget/java/mentalmenteprejudicados.enxada.host?" + new Date().getTime();
+            img.src = "https://api.mcstatus.io/v2/widget/java/mentalpreju.enxada.host?" + new Date().getTime();
         }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
